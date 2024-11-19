@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc Mừng Ngày Quốc Tế Nam Giới</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: url('https://i.pinimg.com/originals/1d/30/b5/1d30b5a0c298c02edaf2f501b22a6587.gif') no-repeat center center fixed; 
+            background-size: cover; 
+            color: white; 
+        }
+
+        h1 {
+            color: #fff;
+            text-align: center;
+            font-size: 2.5em;
+        }
+
+        label {
+            font-size: 1.2em;
+        }
+
+        input {
+            padding: 8px;
+            font-size: 1em;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1em;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .result {
+            font-size: 1.2em;
+            margin-top: 20px;
+            font-weight: bold;
+            color: #F5F5DC;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            max-width: 400px;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Chúc Mừng Ngày Quốc Tế Nam Giới</h1>
+
+        <label for="name">Bạn tên là (Your first name):</label><br>
+        <input type="text" id="name" placeholder="Tên của bạn"><br>
+
+        <label for="class">Bạn học lớp (Your class):</label><br>
+        <input type="text" id="class" placeholder="Lớp của bạn"><br>
+
+        <button onclick="displayMessage()">Xem lời chúc</button>
+
+        <p id="result" class="result"></p>
+    </div>
+
+    <script>
+        function displayMessage() {
+            var name = document.getElementById("name").value.trim();
+            var userClass = document.getElementById("class").value.trim();
+            var resultText = "";
+
+            if ((name === "Ân" && (userClass === "11A02" || userClass === "11A2" || userClass === "B2"))){
+                resultText = "Chúc Ân 19/11 vui vẻ, hạnh phúc và thành công theo đuổi ước mơ, đam mê của mình. NKT hy vọng rằng trước những challenges trong code hay khó khăn trong cuộc sống vẫn không thể thách thức Ân. Mãi tin và tự hào!";
+            } else if ((name === "Khoa" && (userClass === "11A02" || userClass === "11A2" || userClass === "B2"))) {
+                resultText = "19/11 vui vẻ nha Px Khoa! NKT chúc Khoa \"AC\" nhiều bài code hơn nữa và tự hào làm coder của NKT.";
+            } else if ((name === "Triết" && (userClass === "11TH1" || userClass === "BTH1"))) {
+                resultText = "\"Yo chào buổi sáng!\" NKT chúc Triết một ngày 19/11 thiệt là vui và may mắn \"full AC\" cả code lẫn trái tim của ai kia.";
+            } else if ((name === "Phúc" && (userClass === "11A06" || userClass === "11A6" || userClass === "B6"))) {
+                resultText = "NKT chúc Bá Phúc ngày càng mạnh để full AC, ít deadline để có nhiều thời gian cày hơn, và... hạnh phúc với bên nửa kia bán cầu , jk;) Hy vọng Bá Phúc sẽ có thật nhiều kỷ niệm với NKT, với cả thầy cô, tiền bối, hậu bối lẫn các \"sensei orz\".";
+            } else if ((name === "Quang" && (userClass === "11A06" || userClass === "11A6" || userClass === "B6"))) {
+                resultText = "NKT chúc Quang out trình để full AC để năm nay đi \"lụm\" huy chương. Hy vọng Quang có nhiều kỷ niệm đẹp với NKT. Sau này với tầm cao hơn leader hiện tại (theo nghĩa đen) thì có thể dẫn dắt một đàn em 2k9, 2k10.";
+            } else if ((name === "Khánh" && (userClass === "11TH1" || userClass === "BTH1"))) {
+                resultText = "Chúc Khánh code trên CP mượt như đàn cho BBC. Năm nay cố gắng \"lụm\" huy chương.";
+            } else if ((name === "Việt" && (userClass === "11A06" || userClass === "11A6" || userClass === "B6"))) {
+                resultText = "Chào \"tân binh\" của NKT đến từ 11A06, chúc Việt có nhiều niềm vui và kỷ niệm khi học chung với NKT. 19/11 vui vẻ!";
+            } else if ((name === "Duy" && (userClass === "12A02" || userClass === "12A2" || userClass === "A2"))) {
+                resultText = "Chúc mừng 19/11, NKT chúc Duy code mạnh như hóa, luôn vui vẻ và có nhiều thời gian đáng nhớ ở NKT.";
+            } else if ((name === "Tuấn" && (userClass === "12A05" || userClass === "12A5" || userClass === "A5"))) {
+                resultText = "Chúc Tuấn 19/11 vui vẻ, code ngày càng xịn hơn và giải được nhiều bài \"hack não\" hơn cả bài Ba đường truyền điện. Hy vọng Tuấn có nhiều kỷ niệm đẹp với NKT.";
+            } else if ((name === "Nhật" || name === "Hiếu" || name === "Khánh") && (userClass === "12CT" || userClass === "AT")) {
+                resultText = "Moment;))) Chúc bạn ngày càng mạnh, đấm hết mọi bài và lên legendary grandmaster. NKT cảm ơn vì những moment hài hước từ AT.";
+            } else if ((name === "Minh" && (userClass === "10A07" || userClass === "10A7" || userClass === "C7")) || 
+                (name === "Thắng" && (userClass === "10A07" || userClass === "10A7" || userClass === "C7")) || 
+                (name === "Anh" && (userClass === "10A08" || userClass === "10A8" || userClass === "C8")) || 
+                (name === "Anh" && (userClass === "10A06" || userClass === "10A6" || userClass === "C6")) || 
+                (name === "Phong" && (userClass === "10TH1" || userClass === "CTH1")) || 
+                (name === "Tiến" && (userClass === "10A04" || userClass === "10A4" || userClass === "C4"))) {
+                resultText = "19/11 vui vẻ nha \"tân binh\" 2k9! Chúc em học thật giỏi, các anh chị trong NKT tự hào về tụi em. Cũng hy vọng tụi em như các anh chị trong NKT, sẽ có nhiều kỷ niệm tuyệt vời và gắn bó với NKT lâu dài.";
+            } else if ((name === "Tiến" || name === "Kiên") && userClass === "11CTin") {
+                resultText = "Chúc God 19/11 vui vẻ như khi lên legendary grandmaster codeforces! Dù sao thì trong lòng những người hâm mộ là NKT, God là mạnh nhất.";
+            } else {
+                resultText = "Không tìm thấy tên của bạn. Hãy nhập đúng tên và lớp nhé!";
+            }
+
+            document.getElementById("result").innerText = resultText;
+        }
+    </script>
+
+</body>
+</html>
